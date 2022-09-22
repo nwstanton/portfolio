@@ -1,7 +1,7 @@
 function ExpCard() {
   return (
-    <div className="max-w-{300} rounded border border-slate-500 p-4 hover:shadow-lg">
-      <h2 className="text-lg font-bold text-slate-500">Talent Guard &rarr;</h2>
+    <div className="max-w-{300} rounded border border-slate-500 from-pink-500 to-yellow-500 p-4 hover:bg-gradient-to-r hover:shadow-lg">
+      <h2 className="text-lg font-bold text-black">Talent Guard &rarr;</h2>
       <h3>Full-Stack Engineer</h3>
       <ul>
         <li>C#</li>
