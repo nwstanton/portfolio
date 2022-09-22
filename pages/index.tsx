@@ -1,12 +1,15 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
+import ExpCard from '../components/ExpCard'
 
 const Home: NextPage = () => {
   return (
-    <h1 className="text-3xl font-bold underline text-red-500">
-      Hello world!
-    </h1>
+    <div className="flex flex-col items-center">
+      <h1 className="m-8 text-3xl font-bold text-red-500 underline">
+        Hello world!
+      </h1>
+
+      <ExpCard />
+    </div>
   )
 }
 
