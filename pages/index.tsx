@@ -21,6 +21,7 @@ const Home: NextPage = () => {
           href="https://www.linkedin.com/in/nathanwaynestanton/"
           target="_blank"
           className="text-cyan-500"
+          rel="noreferrer"
         >
           Connect.
         </a>
