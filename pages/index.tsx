@@ -27,7 +27,7 @@ const Home: NextPage = () => {
         </a>
       </h1>
 
-      <div className="grid grid-cols-2 gap-8">
+      <div className="grid grid-cols-2 gap-8 pb-6">
         <ExpCard />
 
         <ExpCard />
