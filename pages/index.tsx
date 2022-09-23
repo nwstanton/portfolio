@@ -1,14 +1,19 @@
 import type { NextPage } from 'next'
+import Image from 'next/image'
+import profilePic from "../public/images/portfolio picture.jpg"
 import ExpCard from '../components/ExpCard'
 
 const Home: NextPage = () => {
   return (
     <div className="flex flex-col items-center">
       <div className='py-5'>
-        <img
-          src="/images/portfolio picture.jpg"
-          className="h-60 w-60 rounded-full"
-        ></img>
+        <Image
+          src={profilePic}
+          alt="NatePic"
+          height={240}
+          width={240}
+          className="rounded-full"
+        />
       </div>
       <h1 className="m-8 text-3xl font-bold text-black">
         Hi, I'm Nathan Stanton. Lets{' '}
