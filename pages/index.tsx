@@ -30,13 +30,30 @@ const Home: NextPage = () => {
 
         <div className="grid grid-cols-1 gap-8 pb-6">
         
-          <ExpCard />
+          <ExpCard 
+            name="TalentGuard"
+            position="Full-Stack Engineer"
+            experience={[
+              "C#",
+              "ASP NET",
+              "Blazor",
+              "SQL Server",
+              "Azure Dev Ops",
+            ]}
+          />
+
+          <ExpCard
+            name="Stealth Retainers"
+            position="Full-Stack Engineer"
+            experience={[
+              "Python",
+              "Django",
+              "Bootstrap",
+              "Livesession",
+              "Git",
+            ]}
+          />
           
-          <ExpCard />
-
-          <ExpCard />
-
-          <ExpCard />
         </div>
       </div>
     </>
