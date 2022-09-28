@@ -7,7 +7,7 @@ const Home: NextPage = () => {
   return (
     <>
       <div className="flex flex-col items-center">
-        <div className="py-5">
+        <div className="pt-8">
           <Image
             src={profilePic}
             alt="NatePic"
@@ -28,7 +28,7 @@ const Home: NextPage = () => {
           </a>
         </h1>
 
-        <div className="grid grid-cols-1 gap-8 pb-6">
+        <div className="grid grid-cols-1 gap-8 place-items-center pb-6">
         
           <ExpCard 
             name="TalentGuard"
@@ -40,6 +40,8 @@ const Home: NextPage = () => {
               "SQL Server",
               "Azure Dev Ops",
             ]}
+            summary="This will have a summary of what i did and used at the respective company and the impacts i had on it"
+
           />
 
           <ExpCard
@@ -52,6 +54,7 @@ const Home: NextPage = () => {
               "Livesession",
               "Git",
             ]}
+            summary="This will have a summary of what i did and used at the respective company and the impacts i had on it "
           />
           
         </div>
