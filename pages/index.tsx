@@ -16,17 +16,21 @@ const Home: NextPage = () => {
             className="rounded-full"
           />
         </div>
-        <h1 className="m-8 text-3xl font-bold text-black">
+        <h1 className="m-8 text-5xl font-bold text-black">
           Hi, I&apos;m Nathan Stanton. Lets{' '}
           <a
             href="https://www.linkedin.com/in/nathanwaynestanton/"
             target="_blank"
-            className="text-cyan-500"
+            className="text-cyan-500 underline"
             rel="noreferrer"
           >
             Connect.
           </a>
         </h1>
+
+        
+        <h2 className="mb-8 text-3xl font-bold text-black underline underline-offset-8">Work Experience</h2>
+       
 
         <div className="grid grid-cols-1 gap-8 place-items-center pb-6">
         
@@ -57,6 +61,55 @@ const Home: NextPage = () => {
             summary="This will have a summary of what i did and used at the respective company and the impacts i had on it "
           />
           
+        </div>
+        
+        <h2 className="mb-8 text-3xl font-bold text-black underline underline-offset-8">Personal Projects</h2>
+        
+        <div className="grid grid-cols-1 gap-8 place-items-center pb-6">
+            
+            <ExpCard
+              name="Portfolio WebSite"
+              position='Web Application'
+              experience={[
+                "Typescript",
+                "Next.js",
+                "Tailwind CSS",
+                "Vercel",
+            ]}
+            summary="I chose Next.js so that I could leverage the React framework, Vercel hosting and build 
+            experience with the different rendering methods available to me by Next.js that alliviate the SEO issues modern web developers face when
+            building a SPA. As I am a Full-Stack Developer I chose Tailwind CSS as it allows rapid itteration and friendly syntax  in the design proccess."
+            />
+
+            <ExpCard
+              name="BlazorShop"
+              position="Web Application"
+              experience={[
+                "C#",
+                "Blazor Server",
+                "Blazor WASM",
+                "Stripe",
+              ]}
+              summary="In order to experiment with building both Blazor Server and Blazor WASM
+              applications from the ground up, I decided to create a mock e-commerce site that has both 
+              End User functionality with Stripe payment support and Admin Interface 
+              to manage available products."
+            />
+
+            <ExpCard
+              name="100 Days of code"
+              position="Udemy Course"
+              experience={[
+                "Python",
+                "Flask",
+                "Automation",
+                "Web Scraping",
+              ]}
+              summary="As a Developer being multi-lingual is incredibly important to me. So while i currently use C# in industry,
+              I love buildign new skills in automation and scripting with Python. I decided to start the Udemy course, 100 Days of Code, 
+              because it has given me a wide array of over 100 projects to hone my skills as a developer and learn many modern packages."
+            />
+
         </div>
       </div>
     </>
