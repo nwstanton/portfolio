@@ -47,7 +47,7 @@ const Home: NextPage = () => {
             ]}
             summary="At TalentGuard I worked on a high throughput team focused mainly on High and critical priority work items.
             Working with C#, Blazor and SQL Server I was able to produce well tested and scalable software used by enterprise level clients.
-            I was able to Leverage my soft skills in tandem with my technial ability to maintain cross department functionality and meet the needs of the company and clients"
+            I was able to Leverage my soft skills in tandem with my technical ability to maintain cross department functionality and meet the needs of the company and clients"
 
           />
 
