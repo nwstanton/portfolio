@@ -45,9 +45,9 @@ const Home: NextPage = () => {
               "SQL Server",
               "Azure Dev Ops",
             ]}
-            summary="At TalentGuard I worked on a high throughput team focused mainly on High and critical priotity work items.
-            Working with C#, Blazor and SQL Server I was able to produce well tested and scaleable software used by enterprise level clients.
-            I was able to Leverage my soft skills in tandem with my techinal ability to maintain cross department functionality and meet the needs of the company and clients"
+            summary="At TalentGuard I worked on a high throughput team focused mainly on High and critical priority work items.
+            Working with C#, Blazor and SQL Server I was able to produce well tested and scalable software used by enterprise level clients.
+            I was able to Leverage my soft skills in tandem with my technial ability to maintain cross department functionality and meet the needs of the company and clients"
 
           />
 
@@ -64,7 +64,7 @@ const Home: NextPage = () => {
             ]}
             summary="At Stealth Retainers I was both A full-stack engineer and the head of sales. Working on an e-commerce site I was 
             able to design, impliment and iterate on web flow and advertizment landing pages in order to boost conversion rates and product 
-            cohesion. I used Python, django and Goodle Analytics to create data drivien, high conversion sales flow and software."
+            cohesion. I used Python, django and Google Analytics to create data driven, high conversion sales flow and software."
           />
           
         </div>
@@ -84,8 +84,8 @@ const Home: NextPage = () => {
                 "Vercel",
             ]}
             summary="I chose Next.js so that I could leverage the React framework, Vercel hosting and build 
-            experience with the different rendering methods available to me by Next.js that alliviate the SEO issues modern web developers face when
-            building a SPA. As I am a Full-Stack Developer I chose Tailwind CSS as it allows rapid itteration and friendly syntax  in the design proccess."
+            experience with the different rendering methods available to me by Next.js that alleviate the SEO issues modern web developers face when
+            building a SPA. As I am a Full-Stack Developer I chose Tailwind CSS as it allows rapid iteration and friendly syntax  in the design process."
             />
 
             <ExpCard
@@ -114,8 +114,8 @@ const Home: NextPage = () => {
                 "Automation",
                 "Web Scraping",
               ]}
-              summary="As a Developer being multi-lingual is incredibly important to me. So while i currently use C# in industry,
-              I love buildign new skills in automation and scripting with Python. I decided to start the Udemy course, 100 Days of Code, 
+              summary="As a Developer being multilingual is incredibly important to me. So while i currently use C# in industry,
+              I love building new skills in automation and scripting with Python. I decided to start the Udemy course, 100 Days of Code, 
               because it has given me a wide array of over 100 projects to hone my skills as a developer and learn many modern packages."
             />
 
