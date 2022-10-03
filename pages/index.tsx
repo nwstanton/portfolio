@@ -36,6 +36,7 @@ const Home: NextPage = () => {
         
           <ExpCard 
             name="TalentGuard"
+            icon={{src:"/images/TalentGuardIcon.PNG" ,alt:"TalentGuard"}}
             position="Full-Stack Engineer"
             experience={[
               "C#",
@@ -50,6 +51,7 @@ const Home: NextPage = () => {
 
           <ExpCard
             name="Stealth Retainers"
+            icon={{src:"/images/SRIcon.PNG" ,alt:"Stealth Retainers"}}
             position="Full-Stack Engineer"
             experience={[
               "Python",
@@ -69,6 +71,7 @@ const Home: NextPage = () => {
             
             <ExpCard
               name="Portfolio WebSite"
+              icon={{src:"/vercel.svg" ,alt:"vercel"}}
               position='Web Application'
               experience={[
                 "Typescript",
@@ -83,6 +86,7 @@ const Home: NextPage = () => {
 
             <ExpCard
               name="BlazorShop"
+              icon={{src:"/images/blazor.svg" ,alt:"blazor"}}
               position="Web Application"
               experience={[
                 "C#",
@@ -98,6 +102,7 @@ const Home: NextPage = () => {
 
             <ExpCard
               name="100 Days of code"
+              icon={{src:"https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg" ,alt:"python"}}
               position="Udemy Course"
               experience={[
                 "Python",
