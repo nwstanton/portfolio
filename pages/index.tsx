@@ -45,7 +45,9 @@ const Home: NextPage = () => {
               "SQL Server",
               "Azure Dev Ops",
             ]}
-            summary="This will have a summary of what i did and used at the respective company and the impacts i had on it"
+            summary="At TalentGuard I worked on a high throughput team focused mainly on High and critical priotity work items.
+            Working with C#, Blazor and SQL Server I was able to produce well tested and scaleable software used by enterprise level clients.
+            I was able to Leverage my soft skills in tandem with my techinal ability to maintain cross department functionality and meet the needs of the company and clients"
 
           />
 
@@ -60,7 +62,9 @@ const Home: NextPage = () => {
               "Livesession",
               "Git",
             ]}
-            summary="This will have a summary of what i did and used at the respective company and the impacts i had on it "
+            summary="At Stealth Retainers I was both A full-stack engineer and the head of sales. Working on an e-commerce site I was 
+            able to design, impliment and iterate on web flow and advertizment landing pages in order to boost conversion rates and product 
+            cohesion. I used Python, django and Goodle Analytics to create data drivien, high conversion sales flow and software."
           />
           
         </div>
