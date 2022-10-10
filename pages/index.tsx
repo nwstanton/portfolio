@@ -1,13 +1,42 @@
+import { useState, useEffect } from 'react'
 import type { NextPage } from 'next'
+import { useTheme } from 'next-themes'
+import { MoonIcon, SunIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image'
 import profilePic from '../public/images/portfolio picture.jpg'
 import ExpCard from '../components/ExpCard'
 
 const Home: NextPage = () => {
+  const {systemTheme, theme, setTheme} = useTheme()
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  const renderThemeChanger = () => {
+    if(!mounted) return null
+    
+    const currentTheme = theme === 'system' ? systemTheme : theme
+
+    if(currentTheme === 'dark') {
+      return (
+        <SunIcon className = "w-7 h-7" role="button" onClick={() => setTheme('light')} />
+      )
+    }
+    else{
+      return (
+        <MoonIcon className = "w-7 h-7" role="button" onClick={() => setTheme('dark')} />
+      )
+    }
+  }
+
   return (
     <>
-      <div className="flex flex-col items-center">
+    
+      <div className="flex flex-col items-center ">
         <div className="pt-8">
+          {renderThemeChanger()}
           <Image
             src={profilePic}
             alt="NatePic"
@@ -121,6 +150,7 @@ const Home: NextPage = () => {
 
         </div>
       </div>
+     
     </>
   )
 }
