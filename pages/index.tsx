@@ -1,13 +1,45 @@
+import { useState, useEffect } from 'react'
 import type { NextPage } from 'next'
+import { useTheme } from 'next-themes'
+import { MoonIcon, SunIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image'
 import profilePic from '../public/images/portfolio picture.jpg'
 import ExpCard from '../components/ExpCard'
 
 const Home: NextPage = () => {
+  const {systemTheme, theme, setTheme} = useTheme()
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  const renderThemeChanger = () => {
+    if(!mounted) return null
+    
+    const currentTheme = theme === 'system' ? systemTheme : theme
+
+    if(currentTheme === 'dark') {
+      return (
+        <SunIcon className = "w-7 h-7" role="button" onClick={() => setTheme('light')} />
+      )
+    }
+    else{
+      return (
+        <MoonIcon className = "w-7 h-7" role="button" onClick={() => setTheme('dark')} />
+      )
+    }
+  }
+
   return (
     <>
-      <div className="flex flex-col items-center">
-        <div className="pt-8">
+    
+      <div className="flex flex-col items-center ">
+        <div className="relative pt-8">
+          <div className='fixed top-2 right-2'>
+           Change Theme {renderThemeChanger()}
+          </div>
+          
           <Image
             src={profilePic}
             alt="NatePic"
@@ -16,7 +48,7 @@ const Home: NextPage = () => {
             className="rounded-full"
           />
         </div>
-        <h1 className="m-8 text-5xl font-bold text-black">
+        <h1 className="m-8 text-5xl font-bold text-black dark:text-white">
           Hi, I&apos;m Nathan Stanton. Lets{' '}
           <a
             href="https://www.linkedin.com/in/nathanwaynestanton/"
@@ -29,7 +61,7 @@ const Home: NextPage = () => {
         </h1>
 
         
-        <h2 className="mb-8 text-3xl font-bold text-black underline underline-offset-8">Work Experience</h2>
+        <h2 className="mb-8 text-3xl font-bold text-black underline underline-offset-8 dark:text-white">Work Experience</h2>
        
 
         <div className="grid grid-cols-1 gap-8 place-items-center pb-6">
@@ -69,7 +101,7 @@ const Home: NextPage = () => {
           
         </div>
         
-        <h2 className="mb-8 text-3xl font-bold text-black underline underline-offset-8">Personal Projects</h2>
+        <h2 className="mb-8 text-3xl font-bold text-black underline underline-offset-8 dark:text-white">Personal Projects</h2>
         
         <div className="grid grid-cols-1 gap-8 place-items-center pb-6">
             
@@ -121,6 +153,7 @@ const Home: NextPage = () => {
 
         </div>
       </div>
+     
     </>
   )
 }
