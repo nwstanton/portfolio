@@ -36,8 +36,8 @@ const Home: NextPage = () => {
     
       <div className="flex flex-col items-center ">
         <div className="relative pt-8">
-          <div className='fixed top-2 right-2'>
-           Change Theme {renderThemeChanger()}
+          <div className='fixed top-3 right-3'>
+            {renderThemeChanger()}
           </div>
           
           <Image
