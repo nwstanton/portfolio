@@ -35,8 +35,11 @@ const Home: NextPage = () => {
     <>
     
       <div className="flex flex-col items-center ">
-        <div className="pt-8">
-          {renderThemeChanger()}
+        <div className="relative pt-8">
+          <div className='fixed top-2 right-2'>
+           Change Theme {renderThemeChanger()}
+          </div>
+          
           <Image
             src={profilePic}
             alt="NatePic"
@@ -45,7 +48,7 @@ const Home: NextPage = () => {
             className="rounded-full"
           />
         </div>
-        <h1 className="m-8 text-5xl font-bold text-black">
+        <h1 className="m-8 text-5xl font-bold text-black dark:text-white">
           Hi, I&apos;m Nathan Stanton. Lets{' '}
           <a
             href="https://www.linkedin.com/in/nathanwaynestanton/"
@@ -58,7 +61,7 @@ const Home: NextPage = () => {
         </h1>
 
         
-        <h2 className="mb-8 text-3xl font-bold text-black underline underline-offset-8">Work Experience</h2>
+        <h2 className="mb-8 text-3xl font-bold text-black underline underline-offset-8 dark:text-white">Work Experience</h2>
        
 
         <div className="grid grid-cols-1 gap-8 place-items-center pb-6">
@@ -98,7 +101,7 @@ const Home: NextPage = () => {
           
         </div>
         
-        <h2 className="mb-8 text-3xl font-bold text-black underline underline-offset-8">Personal Projects</h2>
+        <h2 className="mb-8 text-3xl font-bold text-black underline underline-offset-8 dark:text-white">Personal Projects</h2>
         
         <div className="grid grid-cols-1 gap-8 place-items-center pb-6">
             
